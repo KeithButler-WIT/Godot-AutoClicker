@@ -1,0 +1,124 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scenes/AutoClickerScene.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scripts/Main.gd" type="Script" id=3]
+
+[node name="Main" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+
+[node name="ManualClick" type="HBoxContainer" parent="."]
+margin_left = 448.0
+margin_top = 296.0
+margin_right = 586.0
+margin_bottom = 316.0
+
+[node name="Button" type="Button" parent="ManualClick"]
+margin_right = 118.0
+margin_bottom = 20.0
+shortcut_in_tooltip = false
+text = "Make Something"
+
+[node name="Label" type="Label" parent="ManualClick"]
+margin_left = 122.0
+margin_top = 3.0
+margin_right = 130.0
+margin_bottom = 17.0
+text = "0"
+
+[node name="SavingTimer" type="Timer" parent="."]
+autostart = true
+
+[node name="AutoClickerContainer" type="HBoxContainer" parent="."]
+margin_left = 60.0
+margin_top = 524.0
+margin_right = 712.0
+margin_bottom = 564.0
+
+[node name="AutoClickers" parent="AutoClickerContainer" instance=ExtResource( 2 )]
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( -646, 0 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="AutoClickers2" parent="AutoClickerContainer" instance=ExtResource( 2 )]
+margin_left = 164.0
+margin_right = 324.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( -646, 0 )
+__meta__ = {
+"_edit_group_": true
+}
+price = 100
+ups = 10
+
+[node name="AutoClickers3" parent="AutoClickerContainer" instance=ExtResource( 2 )]
+margin_left = 328.0
+margin_right = 488.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( -646, 0 )
+__meta__ = {
+"_edit_group_": true
+}
+price = 500
+ups = 40
+
+[node name="AutoClickers4" parent="AutoClickerContainer" instance=ExtResource( 2 )]
+margin_left = 492.0
+margin_right = 652.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( -646, 0 )
+__meta__ = {
+"_edit_group_": true
+}
+price = 10000
+ups = 130
+
+[node name="AutoClickers5" parent="AutoClickerContainer" instance=ExtResource( 2 )]
+margin_left = 656.0
+margin_right = 816.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( -646, 0 )
+__meta__ = {
+"_edit_group_": true
+}
+price = 100000
+ups = 400
+
+[node name="ClicksPerSecondLabel" type="Label" parent="."]
+margin_right = 40.0
+margin_bottom = 14.0
+text = "Clicks/s"
+
+[node name="ClicksPerSecondValue" type="Label" parent="."]
+margin_left = 60.0
+margin_right = 100.0
+margin_bottom = 14.0
+
+[node name="LineEdit" type="LineEdit" parent="."]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 447.0
+margin_top = -600.0
+margin_right = 576.0
+margin_bottom = -576.0
+grow_horizontal = 2
+hint_tooltip = "Add your own company name here"
+align = 1
+expand_to_text_length = true
+placeholder_text = "Company Name"
+placeholder_alpha = 1.0
+
+[node name="Line2D" type="Line2D" parent="."]
+position = Vector2( 59, 0 )
+points = PoolVector2Array( 389, 24, 517, 24 )
+width = 2.0
+default_color = Color( 1, 1, 1, 1 )
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[connection signal="pressed" from="ManualClick/Button" to="." method="_on_Button_pressed"]
+[connection signal="timeout" from="SavingTimer" to="." method="_on_SavingTimer_timeout"]
