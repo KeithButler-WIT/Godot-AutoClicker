@@ -40,7 +40,7 @@ var currencySprite = preload("res://Scenes/CurrencySprite.tscn")
 func spawnCurrency():
 	randomize()
 	var currency = currencySprite.instance()
-	currency.set_position($ManualClick.rect_position)
+	currency.set_position($CurrencySpawner.rect_position)
 	add_child(currency)
 
 
@@ -58,6 +58,9 @@ func _process(_delta):
 
 
 func _on_SavingTimer_timeout():
+	save_game()
+	
+func save_game():
 	data.count = count
 	
 	var index = 0
