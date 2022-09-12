@@ -25,16 +25,27 @@ func _ready():
 		for dac in data.auto_clickers:
 			$AutoClickerContainer.get_children()[index].update_value(dac)
 			index += 1
+			
+		$NameContainer/LineEdit.text = parse_json(file.get_line())
 		
 		file.close()
 
 
 func _on_Button_pressed():
 	count += 1
+	spawnCurrency()
 
 
-func _process(delta):
-	$ManualClick/Label.text = str(count)
+var currencySprite = preload("res://Scenes/CurrencySprite.tscn")
+func spawnCurrency():
+	randomize()
+	var currency = currencySprite.instance()
+	currency.set_position($ManualClick.rect_position)
+	add_child(currency)
+
+
+func _process(_delta):
+	$CurrentCurrency.text = str(count)
 	
 	# Checks every autoclicker and takes the amount of units
 	var index = 0
@@ -54,7 +65,10 @@ func _on_SavingTimer_timeout():
 		data.auto_clickers[index] = ac.amount
 		index += 1
 	
+	var company_name = $NameContainer/LineEdit.text
+	
 	var file = File.new()
 	file.open(saveFile, File.WRITE)
 	file.store_line(to_json(data))
+	file.store_line(to_json(company_name))
 	file.close()
