@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Scripts/MenuPopup.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/AutoClickerScene.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scripts/Main.gd" type="Script" id=3]
 [ext_resource path="res://Scripts/CurrencySpawner.gd" type="Script" id=4]
+[ext_resource path="res://Sprites/WindowLayout.png" type="Texture" id=5]
 
 [node name="Main" type="Control"]
 script = ExtResource( 3 )
@@ -12,26 +13,27 @@ script = ExtResource( 3 )
 wait_time = 60.0
 autostart = true
 
-[node name="AutoClickerContainer" type="HBoxContainer" parent="."]
-margin_left = 64.0
-margin_top = 524.0
-margin_right = 880.0
-margin_bottom = 564.0
-__meta__ = {
-"_edit_group_": true
-}
+[node name="AutoClickerContainer" type="Control" parent="."]
+margin_right = 1024.0
+margin_bottom = 600.0
 
 [node name="AutoClickers" parent="AutoClickerContainer" instance=ExtResource( 2 )]
-margin_bottom = 40.0
+margin_left = 64.0
+margin_top = 48.0
+margin_right = 224.0
+margin_bottom = 88.0
+grow_horizontal = 2
+grow_vertical = 2
 rect_pivot_offset = Vector2( -646, 0 )
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="AutoClickers2" parent="AutoClickerContainer" instance=ExtResource( 2 )]
-margin_left = 164.0
-margin_right = 324.0
-margin_bottom = 40.0
+margin_left = 64.0
+margin_top = 152.0
+margin_right = 224.0
+margin_bottom = 192.0
 rect_pivot_offset = Vector2( -646, 0 )
 __meta__ = {
 "_edit_group_": true
@@ -40,9 +42,10 @@ price = 100
 ups = 10
 
 [node name="AutoClickers3" parent="AutoClickerContainer" instance=ExtResource( 2 )]
-margin_left = 328.0
-margin_right = 488.0
-margin_bottom = 40.0
+margin_left = 64.0
+margin_top = 272.0
+margin_right = 224.0
+margin_bottom = 312.0
 rect_pivot_offset = Vector2( -646, 0 )
 __meta__ = {
 "_edit_group_": true
@@ -51,9 +54,10 @@ price = 500
 ups = 40
 
 [node name="AutoClickers4" parent="AutoClickerContainer" instance=ExtResource( 2 )]
-margin_left = 492.0
-margin_right = 652.0
-margin_bottom = 40.0
+margin_left = 64.0
+margin_top = 384.0
+margin_right = 224.0
+margin_bottom = 424.0
 rect_pivot_offset = Vector2( -646, 0 )
 __meta__ = {
 "_edit_group_": true
@@ -62,15 +66,61 @@ price = 10000
 ups = 130
 
 [node name="AutoClickers5" parent="AutoClickerContainer" instance=ExtResource( 2 )]
-margin_left = 656.0
-margin_right = 816.0
-margin_bottom = 40.0
+margin_left = 792.0
+margin_top = 48.0
+margin_right = 952.0
+margin_bottom = 88.0
 rect_pivot_offset = Vector2( -646, 0 )
 __meta__ = {
 "_edit_group_": true
 }
 price = 100000
 ups = 400
+
+[node name="AutoClickers6" parent="AutoClickerContainer" instance=ExtResource( 2 )]
+margin_left = 792.0
+margin_top = 152.0
+margin_right = 952.0
+margin_bottom = 192.0
+rect_pivot_offset = Vector2( -646, 0 )
+__meta__ = {
+"_edit_group_": true
+}
+price = 100000
+ups = 400
+
+[node name="AutoClickers7" parent="AutoClickerContainer" instance=ExtResource( 2 )]
+margin_left = 792.0
+margin_top = 256.0
+margin_right = 952.0
+margin_bottom = 296.0
+rect_pivot_offset = Vector2( -646, 0 )
+__meta__ = {
+"_edit_group_": true
+}
+price = 100000
+ups = 400
+
+[node name="AutoClickers8" parent="AutoClickerContainer" instance=ExtResource( 2 )]
+margin_left = 792.0
+margin_top = 384.0
+margin_right = 952.0
+margin_bottom = 424.0
+rect_pivot_offset = Vector2( -646, 0 )
+__meta__ = {
+"_edit_group_": true
+}
+price = 100000
+ups = 400
+
+[node name="AutoClickerContainer1" type="HBoxContainer" parent="."]
+margin_left = 64.0
+margin_top = 524.0
+margin_right = 880.0
+margin_bottom = 564.0
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="ClicksPerSecondLabel" type="Label" parent="."]
 margin_right = 40.0
@@ -84,9 +134,9 @@ margin_bottom = 14.0
 
 [node name="ManualClick" type="Button" parent="."]
 margin_left = 448.0
-margin_top = 256.0
+margin_top = 496.0
 margin_right = 576.0
-margin_bottom = 276.0
+margin_bottom = 516.0
 shortcut_in_tooltip = false
 text = "Make Something"
 
@@ -229,6 +279,11 @@ margin_left = 256.0
 margin_top = -64.0
 margin_right = 319.0
 script = ExtResource( 4 )
+
+[node name="Sprite" type="Sprite" parent="."]
+show_behind_parent = true
+position = Vector2( 512, 296 )
+texture = ExtResource( 5 )
 
 [connection signal="timeout" from="SavingTimer" to="." method="_on_SavingTimer_timeout"]
 [connection signal="pressed" from="ManualClick" to="." method="_on_Button_pressed"]
