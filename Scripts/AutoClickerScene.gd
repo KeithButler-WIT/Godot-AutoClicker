@@ -30,7 +30,7 @@ func update_value(new_value):
 
 
 # Runs every second
-func _process(delta):
+func _process(_delta):
 	if main_node.count >= price:
 		$Button.disabled = false
 	else:

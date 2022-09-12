@@ -13,21 +13,8 @@ func _ready():
 	pass
 
 
-#func change_menu_color():
-	#$Resume.color = Color.gray
-	#$Restart.color = Color.gray
-	#$Quit.color = Color.gray
-	
-	#match selected_menu:
-	#	0:
-			#$Resume.color = Color.greenyellow
-	#	1:
-			#$Restart.color = Color.greenyellow
-	#	2:
-			#$Quit.color = Color.greenyellow
-			
 # TODO: change this to use button nodes 
-func _input(event):
+func _input(_event):
 	if not visible:
 		if Input.is_action_just_pressed("ui_cancel"):
 			# Pause game
