@@ -1,4 +1,4 @@
-extends HBoxContainer
+extends Control
 
 
 var amount = 0

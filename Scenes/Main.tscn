@@ -113,15 +113,6 @@ __meta__ = {
 price = 100000
 ups = 400
 
-[node name="AutoClickerContainer1" type="HBoxContainer" parent="."]
-margin_left = 64.0
-margin_top = 524.0
-margin_right = 880.0
-margin_bottom = 564.0
-__meta__ = {
-"_edit_group_": true
-}
-
 [node name="ClicksPerSecondLabel" type="Label" parent="."]
 margin_right = 40.0
 margin_bottom = 14.0
@@ -280,9 +271,9 @@ margin_top = -64.0
 margin_right = 319.0
 script = ExtResource( 4 )
 
-[node name="Sprite" type="Sprite" parent="."]
+[node name="Background" type="Sprite" parent="."]
 show_behind_parent = true
-position = Vector2( 512, 296 )
+position = Vector2( 512, 299 )
 texture = ExtResource( 5 )
 
 [connection signal="timeout" from="SavingTimer" to="." method="_on_SavingTimer_timeout"]

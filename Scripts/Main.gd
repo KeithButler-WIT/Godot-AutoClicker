@@ -10,6 +10,8 @@ var data = {
 	]
 }
 
+# TODO: SAVE IN A DIFFERENT FORMAT : Binary or something else
+# TODO: place in ~/.config/godotAutoClicker/save.txt (Similar place on windows)
 var saveFile = OS.get_environment("HOME") + "/Documents/save.txt"
 #var saveFile = "res://save.txt"
 
@@ -33,23 +35,6 @@ func _ready():
 
 func _on_Button_pressed():
 	count += 1
-#	spawnCurrency()
-
-
-#var currencySprite = preload("res://Scenes/CurrencySprite.tscn")
-#func spawnCurrency():
-#	randomize()
-#	var currency = currencySprite.instance()
-#	currency.set_position($CurrencySpawner.rect_position)
-#	add_child(currency)
-#	# Add a timer to this node
-#	var timer = Timer.new()
-#	self.add_child(timer)
-#
-#	# Connect the timer to make it call "queue_free" after two seconds
-#	timer.connect("timeout", self, "queue_free")
-#	timer.set_wait_time(2)
-#	timer.start()
 
 
 func _process(_delta):
