@@ -15,4 +15,11 @@
 - Redhead
 - Mullard Duck
 - Ruddy Duck
-    - You vs the duck she tell you not worry about
+  - You vs the duck she tell you not worry about
+- Canvasback
+- Bufflehead
+- Wood Duck
+- Eurasian Wigeon
+- Cinnamon Teal
+- Call Duck
+  - Pint sized demon
