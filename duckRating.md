@@ -24,5 +24,6 @@
   - Always happy to see you
 - Eurasian Wigeon
 - Cinnamon Teal
+  - Goes great with coffee
 - Call Duck
   - Pint sized demon
