@@ -14,3 +14,5 @@
 - Hooded Merganser
 - Redhead
 - Mullard Duck
+- Ruddy Duck
+    - You vs the duck she tell you not worry about
