@@ -17,6 +17,7 @@
 - Redhead
   - Enough said
 - Mullard Duck
+  - Mullard more like dullard ha ha I'm funny
 - Ruddy Duck
   - You vs the duck she tell you not worry about
 - Canvasback
