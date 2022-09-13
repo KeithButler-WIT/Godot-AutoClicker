@@ -1,4 +1,4 @@
-# Duck Rating
+# Duck Theme ideas
 
 ## Ducks
 [Duck List](https://outforia.com/types-of-ducks/)
@@ -12,6 +12,7 @@
   -At least it not a bad comb over 
 - Harlequin Duck
 - Red-Breasted Merganser
+  - Now staring in every teen drama show
 - Hooded Merganser
 - Redhead
   - Enough said
@@ -27,3 +28,5 @@
   - Goes great with coffee
 - Call Duck
   - Pint sized demon
+
+## Upgrades
