@@ -1,4 +1,4 @@
-# Duck Theme ideas
+# Theme ideas
 
 ## Ducks
 [Duck List](https://outforia.com/types-of-ducks/)
@@ -30,4 +30,5 @@
 - Call Duck
   - Pint sized demon
 
-## Upgrades
+### Upgrades
+
