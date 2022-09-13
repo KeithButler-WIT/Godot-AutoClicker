@@ -6,7 +6,7 @@ export var count = 0
 var data = {
 	count = count,
 	auto_clickers = [
-		0,0,0,0,0
+		0,0,0,0,0,0,0,0
 	]
 }
 
