@@ -32,3 +32,20 @@
 
 ### Upgrades
 
+
+## Twitch Bits
+- Items drop out of manual click button
+- Every click a single pixel drops into a jar
+
+### AutoClickers
+1. Full time viewer
+2. Tier 3 sub
+
+## Programming
+- Click to generate lines of code
+
+### AutoClickers
+1. Basement Dweller
+1. Intern
+2. Junior Engineer
+3. Senior Engineer
