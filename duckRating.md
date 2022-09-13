@@ -9,7 +9,7 @@
 - Brazilian Duck
   - Surprisingly not waxed
 - Comb Duck
-  -At least it not a bad comb over 
+  - At least it not a bad comb over 
 - Harlequin Duck
 - Red-Breasted Merganser
   - Now staring in every teen drama show
