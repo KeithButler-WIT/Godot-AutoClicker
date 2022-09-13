@@ -19,6 +19,7 @@
 - Canvasback
 - Bufflehead
 - Wood Duck
+  - Always happy to see you
 - Eurasian Wigeon
 - Cinnamon Teal
 - Call Duck
