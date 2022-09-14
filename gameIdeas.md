@@ -1,6 +1,9 @@
 # Theme ideas
 
 ## Ducks
+Currency is eggs
+
+### List
 [Duck List](https://outforia.com/types-of-ducks/)
 - Torrent Duck
   - Can usually be found in its parents basement ranting about open source software
