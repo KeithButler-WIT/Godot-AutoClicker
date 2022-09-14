@@ -35,6 +35,8 @@ Currency is eggs
   - Pint sized demon
 
 ### Upgrades
+### Latin Mode
+Display all the duck names in latin
 
 
 ## Twitch Bits
