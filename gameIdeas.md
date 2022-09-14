@@ -11,6 +11,7 @@
 - Comb Duck
   - At least it not a bad comb over 
 - Harlequin Duck
+  -Not a quacking matter
 - Red-Breasted Merganser
   - Now staring in every teen drama show
 - Hooded Merganser
@@ -49,3 +50,5 @@
 1. Intern
 2. Junior Engineer
 3. Senior Engineer
+
+## Necomancer
