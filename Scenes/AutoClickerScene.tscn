@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Scripts/AutoClickerScene.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/Duck.png" type="Texture" id=2]
 
 [node name="AutoClickers" type="Control"]
 margin_right = 178.0
@@ -12,22 +13,23 @@ margin_right = 89.0
 margin_bottom = 20.0
 size_flags_stretch_ratio = 0.0
 text = "Auto Clicker"
+icon = ExtResource( 2 )
 
 [node name="Label" type="Label" parent="."]
-margin_left = 93.0
-margin_top = 3.0
-margin_right = 101.0
-margin_bottom = 17.0
+margin_left = 128.0
+margin_top = 24.0
+margin_right = 136.0
+margin_bottom = 38.0
 text = "0"
 
 [node name="Timer" type="Timer" parent="."]
 autostart = true
 
 [node name="Price" type="Label" parent="."]
-margin_left = 2.0
-margin_top = 22.0
-margin_right = 2.0
-margin_bottom = 36.0
+margin_left = 8.0
+margin_top = 48.0
+margin_right = 16.0
+margin_bottom = 62.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 margin_left = 126.0

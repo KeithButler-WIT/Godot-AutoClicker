@@ -17,20 +17,7 @@ var saveFile = OS.get_environment("HOME") + "/Documents/save.txt"
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	var file = File.new()
-	if file.file_exists(saveFile):
-		file.open(saveFile, File.READ)
-		data = parse_json(file.get_line())
-		count = data.count
-		
-		var index = 0
-		for dac in data.auto_clickers:
-			$AutoClickerContainer.get_children()[index].update_value(dac)
-			index += 1
-			
-		$NameContainer/LineEdit.text = parse_json(file.get_line())
-		
-		file.close()
+	load_game()
 
 
 func _on_Button_pressed():
@@ -38,7 +25,7 @@ func _on_Button_pressed():
 
 
 func _process(_delta):
-	$CurrentCurrency.text = str(count)
+	$CurrentCurrency.text = str(Util.nFormatter(count))
 	
 	# Checks every autoclicker and takes the amount of units
 	var index = 0
@@ -47,12 +34,13 @@ func _process(_delta):
 		 total_ups += ac.ups * ac.amount
 		 index += 1
 	# Displays total units/s to the screen
-	$ClicksPerSecondValue.text = str(total_ups)
+	$ClicksPerSecondLabel.text = "Clicks/s: " + str(total_ups)
 
 
 func _on_SavingTimer_timeout():
 	save_game()
-	
+
+
 func save_game():
 	data.count = count
 	
@@ -68,3 +56,20 @@ func save_game():
 	file.store_line(to_json(data))
 	file.store_line(to_json(company_name))
 	file.close()
+
+
+func load_game():
+	var file = File.new()
+	if file.file_exists(saveFile):
+		file.open(saveFile, File.READ)
+		data = parse_json(file.get_line())
+		count = data.count
+		
+		var index = 0
+		for dac in data.auto_clickers:
+			$AutoClickerContainer.get_children()[index].update_value(dac)
+			index += 1
+
+		$NameContainer/LineEdit.text = parse_json(file.get_line())
+		
+		file.close()

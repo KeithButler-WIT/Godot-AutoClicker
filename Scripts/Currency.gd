@@ -18,4 +18,4 @@ func deleteCurrency():
 	timer.set_wait_time(2)
 	timer.start()
 	
-	#queue_free()
+#	queue_free()

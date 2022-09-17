@@ -13,15 +13,23 @@ script = ExtResource( 3 )
 wait_time = 60.0
 autostart = true
 
+[node name="ManualClick" type="Button" parent="."]
+margin_left = 304.0
+margin_top = 480.0
+margin_right = 720.0
+margin_bottom = 600.0
+shortcut_in_tooltip = false
+text = "Make Something"
+
 [node name="AutoClickerContainer" type="Control" parent="."]
 margin_right = 1024.0
 margin_bottom = 600.0
 
 [node name="AutoClickers" parent="AutoClickerContainer" instance=ExtResource( 2 )]
-margin_left = 64.0
-margin_top = 48.0
-margin_right = 224.0
-margin_bottom = 88.0
+margin_left = 16.0
+margin_top = 32.0
+margin_right = 176.0
+margin_bottom = 72.0
 grow_horizontal = 2
 grow_vertical = 2
 rect_pivot_offset = Vector2( -646, 0 )
@@ -62,7 +70,7 @@ rect_pivot_offset = Vector2( -646, 0 )
 __meta__ = {
 "_edit_group_": true
 }
-price = 10000
+price = 3000
 ups = 130
 
 [node name="AutoClickers5" parent="AutoClickerContainer" instance=ExtResource( 2 )]
@@ -74,7 +82,7 @@ rect_pivot_offset = Vector2( -646, 0 )
 __meta__ = {
 "_edit_group_": true
 }
-price = 100000
+price = 10000
 ups = 400
 
 [node name="AutoClickers6" parent="AutoClickerContainer" instance=ExtResource( 2 )]
@@ -86,8 +94,8 @@ rect_pivot_offset = Vector2( -646, 0 )
 __meta__ = {
 "_edit_group_": true
 }
-price = 100000
-ups = 400
+price = 40000
+ups = 6000
 
 [node name="AutoClickers7" parent="AutoClickerContainer" instance=ExtResource( 2 )]
 margin_left = 792.0
@@ -98,8 +106,8 @@ rect_pivot_offset = Vector2( -646, 0 )
 __meta__ = {
 "_edit_group_": true
 }
-price = 100000
-ups = 400
+price = 200000
+ups = 100000
 
 [node name="AutoClickers8" parent="AutoClickerContainer" instance=ExtResource( 2 )]
 margin_left = 792.0
@@ -110,33 +118,23 @@ rect_pivot_offset = Vector2( -646, 0 )
 __meta__ = {
 "_edit_group_": true
 }
-price = 100000
-ups = 400
+price = 1666666
+ups = 1000000
 
 [node name="ClicksPerSecondLabel" type="Label" parent="."]
-margin_right = 40.0
-margin_bottom = 14.0
-text = "Clicks/s"
-
-[node name="ClicksPerSecondValue" type="Label" parent="."]
-margin_left = 60.0
-margin_right = 100.0
-margin_bottom = 14.0
-
-[node name="ManualClick" type="Button" parent="."]
-margin_left = 448.0
-margin_top = 496.0
-margin_right = 576.0
-margin_bottom = 516.0
-shortcut_in_tooltip = false
-text = "Make Something"
+margin_left = 304.0
+margin_top = 8.0
+margin_right = 368.0
+margin_bottom = 24.0
+text = "Clicks/s: "
 
 [node name="CurrentCurrency" type="Label" parent="."]
-margin_left = 448.0
-margin_top = 280.0
-margin_right = 456.0
-margin_bottom = 294.0
+margin_left = 472.0
+margin_top = 48.0
+margin_right = 552.0
+margin_bottom = 62.0
 text = "0"
+align = 1
 
 [node name="NameContainer" type="Control" parent="."]
 margin_left = 448.0
@@ -267,8 +265,10 @@ text = "QUIT"
 
 [node name="CurrencySpawner" type="Control" parent="."]
 margin_left = 256.0
-margin_top = -64.0
+margin_top = -96.0
 margin_right = 319.0
+margin_bottom = -32.0
+rect_pivot_offset = Vector2( 31.5, 32 )
 script = ExtResource( 4 )
 
 [node name="Background" type="Sprite" parent="."]
