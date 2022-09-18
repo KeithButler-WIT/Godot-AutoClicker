@@ -1,10 +1,10 @@
-# Theme ideas
+* Theme ideas
 
-## Ducks
+** Ducks
 Currency is eggs
 
-### List
-[Duck List](https://outforia.com/types-of-ducks/)
+*** List
+[[https://outforia.com/types-of-ducks/][Duck List]]
 - Torrent Duck
   - Can usually be found in its parents basement ranting about open source software
 - Blue Duck
@@ -34,26 +34,25 @@ Currency is eggs
 - Call Duck
   - Pint sized demon
 
-### Upgrades
-### Latin Mode
+*** Upgrades
+*** Latin Mode
 Display all the duck names in latin
 
-
-## Twitch Bits
+** Twitch Bits
 - Items drop out of manual click button
 - Every click a single pixel drops into a jar
 
-### AutoClickers
+*** AutoClickers
 1. Full time viewer
 2. Tier 3 sub
 
-## Programming
+** Programming
 - Click to generate lines of code
 
-### AutoClickers
+*** AutoClickers
 1. Basement Dweller
 1. Intern
 2. Junior Engineer
 3. Senior Engineer
 
-## Necomancer
+** Necomancer
