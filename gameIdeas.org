@@ -37,6 +37,27 @@ Currency is eggs
 *** Upgrades
 *** Latin Mode
 Display all the duck names in latin
+*** Window uses
+**** Left
+- Can have multiple tabs to show info such as:
+  - Overall game stats
+  - Achievements
+  - New game+
+  - Upgrades
+  - etc
+
+*** Unique Idea
+- Each clicker can be converted to a *dark* vesion of itself.
+  - E.g.Mullard -> Ex Mullard
+  - Conversion example
+    - 100 Mullards -> 1 Ex Mullard
+  - Reason to convert
+    - Produce more eggs?
+    - More eggs/s
+
+*** Achievement Ideas
+- Reach 1 million eggs/s using normal clickers only.
+- Produce 1 Trillion eggs total over the course of the game.
 
 ** Twitch Bits
 - Items drop out of manual click button
