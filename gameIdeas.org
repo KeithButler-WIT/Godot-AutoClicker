@@ -53,6 +53,7 @@ Display all the duck names in latin
     - 100 Mullards -> 1 Ex Mullard
   - Reason to convert
     - Produce more eggs?
+      - New egg and only be used to buy *Dark* ducks
     - More eggs/s
   - Has to be unlocked for the tabs to display
 
