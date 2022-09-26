@@ -54,6 +54,7 @@ Display all the duck names in latin
   - Reason to convert
     - Produce more eggs?
     - More eggs/s
+  - Has to be unlocked for the tabs to display
 
 *** Achievement Ideas
 - Reach 1 million eggs/s using normal clickers only.
