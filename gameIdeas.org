@@ -45,15 +45,21 @@ Display all the duck names in latin
   - New game+
   - Upgrades
   - etc
+**** Middle
+- Egg drop down menu
+- Manual click button
+
+**** Right
+- Contains tabs for the various kinds of clickers
 
 *** Unique Idea
-- Each clicker can be converted to a *dark* vesion of itself.
+- Each clicker can be converted to a *dark* vesion of itself
   - E.g.Mullard -> Ex Mullard
   - Conversion example
     - 100 Mullards -> 1 Ex Mullard
   - Reason to convert
     - Produce more eggs?
-      - New egg and only be used to buy *Dark* ducks
+      - New egg can only be used to buy *dark* ducks
     - More eggs/s
   - Has to be unlocked for the tabs to display
 
